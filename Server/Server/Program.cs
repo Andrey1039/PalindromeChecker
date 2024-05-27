@@ -10,11 +10,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 int limit = 0;
-bool IsDigit = true;
 
 do
 {
-    Console.Write("¬ведите максимальное количество запросов N: ");
+    Console.Write("Enter max number of requests (N): ");
     int.TryParse(Console.ReadLine(), out limit);
 }
 while (limit <= 0 ? true : false);
